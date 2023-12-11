@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Weather</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrap">
+				<div class="weather">
+					<div class="weather__wrap">
+						<form class="weather__search" action="#" method="get">
+							<input
+								class="search__input"
+								name="search"
+								placeholder="Find city"
+								type="search"
+								autocomplete="off"
+							/>
+							<button class="search__btn btn-reset" type="submit"></button>
+						</form>
+						<div class="weather__inner">
+							<div class="current">
+								<div class="tabs">
+									<div class="tabs__content tabs-content">
+										<div
+											class="tabs-content__item now tabs-content__item--active"
+										>
+											<span class="now__temp"></span>
+											<div class="now__icon">
+												<img class="now__img" src="img/cloud.png" alt="Cloud" />
+											</div>
+											<div class="now__info">
+												<span class="now__city"></span>
+												<button class="now__favorite btn-reset"></button>
+											</div>
+										</div>
+										<div class="tabs-content__item details">
+											<span class="details__city">Barnaul</span>
+											<div class="details__info">
+												<ul class="details__list list-reset">
+													<li class="details__item">
+														<span class="details__text"
+															>Temperature:<span
+																class="details__value details__temp temp"
+															></span
+														></span>
+													</li>
+													<li class="details__item">
+														<span class="details__text"
+															>Feels like:<span
+																class="details__value details__feels temp"
+															></span
+														></span>
+													</li>
+													<li class="details__item">
+														<span class="details__text"
+															>Weather:<span
+																class="details__value details__weather"
+															></span
+														></span>
+													</li>
+													<li class="details__item">
+														<span class="details__text"
+															>Sunrise:<span
+																class="details__value details__sunrise"
+															></span
+														></span>
+													</li>
+													<li class="details__item">
+														<span class="details__text"
+															>Sunset:<span
+																class="details__value details__sunset"
+															></span
+														></span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tabs-content__item forecast">
+											<div class="tabs-content__inner">Контент 3</div>
+										</div>
+									</div>
+									<div class="tabs__nav">
+										<button
+											class="tabs__btn tabs__btn--active btn-reset"
+											data-tab-name="now"
+										>
+											Now
+										</button>
+										<button class="tabs__btn btn-reset" data-tab-name="details">
+											Details
+										</button>
+										<button
+											class="tabs__btn btn-reset"
+											data-tab-name="forecast"
+										>
+											Forecast
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="favorite">
+								<div class="favorite__list">
+									<!-- <div class="favorite__item">
+										<span class="favorite__name">TEST</span>
+										<button class="favorite__delete btn-reset"></button>
+									</div> -->
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="js/main.js"></script>
+		<script type="module" src="js/weather.js"></script>
+	</body>
+</html>
