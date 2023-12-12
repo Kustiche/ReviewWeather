@@ -7,7 +7,3 @@ export function addCurrentCity(name) {
 export function addFavoriteCities() {
   localStorage.setItem("favoriteCities", cities);
 }
-
-export function getFavoriteCities() {
-  return localStorage.getItem("favoriteCities");
-}
